@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander');
+var fs = require('fs');
+
+var app = require('../lib');
+var config = require('../lib/config');
+
+program
+    .version('0.1.0')
+    .option('-c, --config <path>', 'use config')
+    .option('-p, --port [value]', 'set port')
+    .parse(process.argv);
+
+if (program.config) {
+    var value = require(program.config);
+    config.setConfig(value);
+}
+
+var port = program.port || 3000;
+app.listen(port);
+
+console.log('app started and listen at http://localhost:' + port);

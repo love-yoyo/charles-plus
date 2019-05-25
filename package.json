@@ -1,0 +1,27 @@
+{
+  "name": "charles-plus",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/love-yoyo/charles-plus.git"
+  },
+  "author": "King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/love-yoyo/charles-plus/issues"
+  },
+  "homepage": "https://github.com/love-yoyo/charles-plus#readme",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "commander": "^2.20.0",
+    "fs-extra": "^8.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
